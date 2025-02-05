@@ -1,0 +1,26 @@
+{
+  "name": "publicodes-tjm-simulator",
+  "description": "A simulator for estimating the TJM in publicodes",
+  "version": "0.1.0",
+  "author": "Johan Girod",
+  "license": "MIT",
+  "type": "module",
+  "main": "publicodes-build/index.js",
+  "types": "publicodes-build/index.d.ts",
+  "files": [
+    "publicodes-build"
+  ],
+  "scripts": {
+    "compile": "publicodes compile",
+    "dev": "publicodes dev",
+    "pretest": "npm run compile",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "publicodes": "^1.7.0"
+  },
+  "devDependencies": {
+    "@publicodes/tools": "^1.5.1",
+    "vitest": "^2.1.2"
+  }
+}
