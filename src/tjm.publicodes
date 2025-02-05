@@ -1,0 +1,21 @@
+nb jours: 
+  unité: jour facturé/mois
+
+CA: 
+  titre: Chiffre d'affaires
+  valeur: TJM * nb jours
+  
+TJM: 
+  description: tarif journalier
+  unité: €/jour facturé
+
+charges fixes: 
+  description: charges fixes
+  unité: €/an
+
+rémunération net: 
+  valeur: 
+    CA - charges fixes
+  abattement:
+    30% # Pourcentage de cotisations sociales
+  
